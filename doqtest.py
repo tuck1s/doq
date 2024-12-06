@@ -16,8 +16,7 @@ try:
 except ImportError:
     have_trio = False
 
-# This demo assumes you have the aioquic example doq_server.py running on localhost
-# on port 4784 on localhost.
+# This resolver from https://adguard-dns.io/en/blog/dns-over-quic-official-standard.html
 peer_address = "94.140.14.14"
 peer_port = 853
 query_name = "halon.io"
